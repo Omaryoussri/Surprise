@@ -54,10 +54,10 @@ body {
     border-top: none;
 }
 
-/* تنسيق الخطوط */
 .letter-content {
-    font-family: 'Great Vibes', cursive; /* الخط الرومانسي الإيطالي */
-    color: #4a3b32; /* لون حبر بني غامق */
+    /* الخط الجديد: كلاسيكي، شيك جداً ومقروء على كل الأجهزة */
+    font-family: 'Georgia', 'Times New Roman', serif; 
+    color: #4a3b32; 
 }
 
 .letter-content h1 {
