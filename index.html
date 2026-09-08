@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ٍSurprise!!</title>
+    <link rel="stylesheet" href="style.css">
+    <!--link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"-->
+</head>
+<body>
+
+    <div class="letter-container">
+        <div class="corner top-left"></div>
+        <div class="corner bottom-right"></div>
+
+        <div class="letter-content">
+            <h1>To My Beloved,</h1>
+            <p>
+                Happy birthday to the prettiest girl that ever lived , Happy Birthday to my once in a life time
+                Every day spent with you i always try to spend it to the fullest , You don't know how much you mean to me babe.
+                since i met you and my life changed , having you around is the best  thing i could ever ask for , you make me feel wanted , heard
+                and loved . Your Prescense brought the best version out  of me , because only you  deserve it. 
+                Ohh my baby what can i say about how much i love you and how much i love eveything about you ,  No Words
+                can ever describe it but i will try my best 🤭
+                <br>
+                <h1>Some of the things i love about you</h1>
+                <p>
+                    - I LOVE your pretty Eyes , Each time i look into them , i can see why god chose us to meet ,
+                Each time you look at me with that look it's just like Damn i melt like How fire melt Metals , 
+                Each time i  see your eyes i can see my world , my future in them , i love those pretty eyes so much babe.
+                </p>
+                <br>
+                <p>
+                    - I LOVE your smile , it's THE 2nd Most perfect thing (After your eyes) , seeing you smile 
+                is wining in life , for me when you smile it feels like  heaven  , it feels like everything is perfect , 
+                seeing you smile makes  my heart , my eyes and my lips smile , seeing you smile because of me , that's wining in life babe
+                </p>
+                <br>
+                <p>
+                    - I LOVE how you always take care of me like i am your child (Although i am older than you 🤨) 
+                You always take care of me , support me , and there by my side , and i am greatful  it's you not anyone else , i couldn't wish for anyone else ya KOTY , 
+                you make me feel like home without you even notice , you always reassure me , you did things for me that i have never thought anyone would .
+                When i am with you , i feel  like a little kid at his home , i feel safe , (I hope i make you feel safe my sweet little girl 💗)
+                </p>
+                <br>
+                <p>
+                - I LOVE EVERYTHING ABOUT YOU BABE , I LOVE EVERY THING ABOUT US , I LOVE OUR MORNINGS , I LOVE OUR NIGHTS , OUR TALKS , OUR CALLS 
+                OUR MOVIE NIGHTS , OUR FOOTBALL NIGHTS , I love every thing as long as you're in it with me babe , you make everything
+                better , more exciting and more pretty , I AM REALLY LUCKY TO HAVE YOU BY MY SIDE (I WANT YOU BY MY SIDE FOREVER)
+                </p>
+                <br>
+            </p>
+            <p>
+                <h1>Songs the reminds me of you<h1>
+                <p>1.Helaf El Amar -George Wassouf-</p>
+                <p>2.Kalam EL Nas -George Wassouf-</p>
+                <p>3.Saalouny El Nas -Fairuz-</p>
+                <p>4.Siret El Hob -Umm Kulthum-</p>
+                <P>5.Matrahak Bi Albi -Majda El Roumi-</P>   
+                <p>6.Bayent El Hob Alya -Mayada El Hennaway-</p>
+                <p>7.Ana Bashaak -Mayada El Hennaway-</p>
+                <p>8.Bahlam Maak -Najat El Saghira-</p>
+                <p>9.Khaleek Bilbait -Fairuz-</p>
+                <p>10.Ainaka -Majda El Roumi-</p>
+                <p>11.Al Hob El Kebeir -George Wassouf-</p>
+                <p>12.Awkat Ashouf Malamhak -El Masryeen-</p>
+                <p>13.Sweet -CAS-</p>
+                <p>14.Apocalypse -CAS-</p>
+                <p>15.Falling in Love -CAS-</p>
+                <p>16.Love Song -Lana Del Ray-</p>
+                <p>17.Ya Helwa Blil -DizzyTooSKinny-</p>
+                <p>18.Enta Omry -Umm Kulthum-</p>
+                <p>19.Alf Leila w Leila -Umm Kulthum-</p>
+                <p>20.Dd El Kon -Ziad Zaza & Donia Wael-</p>
+                <p>And many more ya KOOOTYYY enta ya 3asl</p>
+            </p>
+            <br>
+            <p>And Finally , Happiest of birthdays to the most beatiful woman i have ever seen
+                Since The day i saw you and my eyes couldn't look at anyone else , you don't 
+                know how pretty i see you , you don't know how much you mean to me 
+                you don't know how  much i really want to spend the rest of  my days with you
+                on my death bed i see you by my side , i really hope and pray for you to be there
+                by my side always , and i really hope you never get sick of me or bored , because i 
+                will never get sick of you , How can i get sick of the Sun to My Mornings , The Moon and Stars
+                To my night , The Water to my Fire , The Future Mother to my Kids , The Future to my present ,
+                The  Light to my Darkness 💗 . I hope we will always stay together ya BASBOSTY 😍💗 MWAHHH🤭.
+            </p>
+            
+            <p class="signature">
+                Forever yours,<br>
+                Cookie (AKA -Omar Youssri ElSAyed Morsy-)
+            </p>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            
+            const elements = document.querySelectorAll('.letter-content p, .letter-content h1');
+            
+            elements.forEach(el => {
+                const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+                const textNodes = [];
+                let node;
+                
+                while (node = walker.nextNode()) {
+                    textNodes.push(node);
+                }
+                
+                textNodes.forEach(textNode => {
+                    if (textNode.nodeValue.trim() !== '') {
+                        
+                        const words = textNode.nodeValue.split(/(\s+)/); 
+                        const fragment = document.createDocumentFragment();
+                        
+                        words.forEach(word => {
+                            if (word.trim() === '') {
+                
+                                fragment.appendChild(document.createTextNode(word));
+                            } else {
+                                
+                                const span = document.createElement('span');
+                                span.className = 'magic-word';
+                                span.textContent = word;
+                                fragment.appendChild(span);
+                            }
+                        });
+                        textNode.parentNode.replaceChild(fragment, textNode);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
