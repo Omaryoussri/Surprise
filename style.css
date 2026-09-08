@@ -55,8 +55,7 @@ body {
 }
 
 .letter-content {
-    /* الخط الجديد: كلاسيكي، شيك جداً ومقروء على كل الأجهزة */
-    font-family: 'Georgia', 'Times New Roman', serif; 
+    font-family: 'Arial', sans-serif; 
     color: #4a3b32; 
 }
 
