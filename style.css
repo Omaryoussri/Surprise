@@ -100,6 +100,15 @@ img {
     max-width: 100%; 
     height: auto;     
 }
+.hover-image {
+  /* Creates the smooth animation (0.3 seconds duration) */
+  transition: transform 0.3s ease; 
+}
+
+.hover-image:hover {
+  /* translateY(-10px) moves it UP, scale(1.05) makes it 5% BIGGER */
+  transform: translateY(-10px) scale(1.05); 
+}
 
 /* ------------------------------------------------ */
 /* التجاوب (Responsive) مع الموبايل والتابلت */
@@ -122,6 +131,7 @@ img {
     img {
         width: 80%; /* Makes the image take up 80% of the container width on tablets */
     }
+    
 }
 
 /* شاشات الموبايل */
