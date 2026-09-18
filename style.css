@@ -92,6 +92,15 @@ body {
     transform: translateY(-4px) scale(1.05); /* حركة خفيفة لفوق وتكبير بسيط جداً */
 }
 
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 5px solid #FFD1DC;
+    max-width: 100%; 
+    height: auto;     
+}
+
 /* ------------------------------------------------ */
 /* التجاوب (Responsive) مع الموبايل والتابلت */
 /* ------------------------------------------------ */
@@ -109,6 +118,9 @@ body {
     }
     .signature {
         font-size: 2.4rem !important;
+    }
+    img {
+        width: 80%; /* Makes the image take up 80% of the container width on tablets */
     }
 }
 
@@ -132,5 +144,9 @@ body {
     .signature {
         font-size: 2rem !important;
         margin-top: 30px;
+    }
+
+    img {
+        width: 95%; /* Makes the image take up almost the full width on small screens */
     }
 }
